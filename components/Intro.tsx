@@ -96,7 +96,7 @@ export default function Intro() {
   return (
     <IntroSection>
       <IntroName>Anish Agnihotri</IntroName>
-      <IntroHeading>Serial hacker translating words to code</IntroHeading>
+      <IntroHeading>Serial hacker translating ideas to code</IntroHeading>
       <IntroSubs>
         <span>Current Position</span>
         <h3>Research Intern, Polychain</h3>
@@ -104,9 +104,9 @@ export default function Intro() {
       </IntroSubs>
       <IntroSubs>
         <span>With a passion for</span>
-        <h3>Blockchain &amp; Finance</h3>
+        <h3>Blockchain &amp; Economics</h3>
         <p>
-          Exploring market structure, and run-off network effects from on-chain
+          Exploring market structure, and network effects from on-chain
           activity.
         </p>
       </IntroSubs>

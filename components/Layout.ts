@@ -18,6 +18,8 @@ export const Section = styled.div`
 
 export const theme = {
   background: "#f7faff",
+  semidark: "rgba(6,8,10,.96)",
+  dark: "#06080a",
   accent: "#ffb41f",
   header: {
     main: "#06090e",

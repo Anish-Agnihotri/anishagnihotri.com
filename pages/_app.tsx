@@ -38,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: #f7faff;
     margin: 0px;
-    padding-bottom: 500px;
   }
 `;
 

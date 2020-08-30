@@ -109,8 +109,8 @@ export default function About() {
       <div>
         <p>My name is Anish, I'm 17 years old, and I like to build software.</p>
         <p>
-          I moved to North America when I was 4 and have been typing away at a
-          keyboard ever since. In high school, I grew passionate about
+          I started programming in the fifth grade and have been typing away at
+          a keyboard ever since. In high school, I grew passionate about
           hackathons, burning sleepless nights{" "}
           <a
             href="https://devpost.com/348712712"
