@@ -4,6 +4,7 @@ import { Container, theme } from "components/Layout";
 import Intro from "components/Intro";
 import About from "components/About";
 import Projects from "components/Projects";
+import Awards from "components/Awards";
 import Footer from "components/Footer";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Intro />
         <About />
         <Projects />
+        <Awards />
         <Footer />
       </Container>
     </ThemeProvider>
@@ -22,5 +24,3 @@ export default function Home() {
 // Projects
 // Awards
 // Resume
-// CTA
-// Footer

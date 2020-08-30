@@ -9,7 +9,7 @@ const ProjectLayout = styled.div`
 
 const ProjectsSection = styled(Section)`
   h3 {
-    font-size: 1.5625rem;
+    font-size: 30px;
     font-family: "Bluu", serif;
     letter-spacing: -0.4px;
     line-height: 1.25em;
