@@ -140,7 +140,7 @@ const eighteen = [
 export default function Awards() {
   return (
     <AwardsSection>
-      <h1>Recognition</h1>
+      <h1>Resume</h1>
       <p>
         <Year>2020</Year>
         <Divider>/</Divider>

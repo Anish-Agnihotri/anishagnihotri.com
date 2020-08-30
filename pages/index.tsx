@@ -5,6 +5,7 @@ import Intro from "components/Intro";
 import About from "components/About";
 import Projects from "components/Projects";
 import Awards from "components/Awards";
+import Resume from "components/Resume";
 import Footer from "components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Projects />
         <Awards />
+        <Resume />
         <Footer />
       </Container>
     </ThemeProvider>
@@ -22,5 +24,9 @@ export default function Home() {
 }
 
 // Projects
-// Awards
-// Resume
+
+// Comments
+// Compression
+// Meta
+// Analytics
+// Performance (SSR + styled-components)
