@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { createGlobalStyle } from "styled-components";
+import "@brainhubeu/react-carousel/lib/style.css";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -68,6 +69,16 @@ export default function Portfolio({ Component, pageProps }) {
           rel="preload"
           as="font"
           crossOrigin=""
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
       <Component {...pageProps} />

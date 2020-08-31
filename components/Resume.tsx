@@ -11,6 +11,7 @@ const ResumeContainer = styled.div`
     width: 100%;
     height: auto;
     margin-top: -10px;
+    transition: 0.1s;
 
     img {
       max-width: 100%;

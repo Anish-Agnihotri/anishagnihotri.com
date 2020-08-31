@@ -26,10 +26,74 @@ const ProjectsSection = styled(Section)`
   }
 `;
 
-const ProjectReel = styled.div`
-  padding: 200px 0px;
-  text-align: center;
-  background-color: #ccc;
+const ProjectShowcase = styled(Section)`
+  margin-top: 20px;
+`;
+
+const Project = styled.a`
+  display: inline-block;
+  width: calc(50% - 30px);
+  min-width: 400px;
+  border-radius: 13px;
+  margin: 15px 30px 15px 0px;
+  transition: 100ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+
+  div {
+    width: 100%;
+    display: inline-block;
+    background-color: ${(props) => props.theme.header.decoration};
+    color: #fff;
+
+    :nth-child(1) {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      img {
+        max-width: 100%;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+      }
+    }
+
+    :nth-child(2) {
+      width: calc(100% - 40px);
+      padding: 0px 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      h3 {
+        color: white;
+        letter-spacing: -1px;
+        font-family: "Bluu", serif;
+        font-size: 25px;
+        margin-block-start: 12.5px;
+        margin-block-end: 7.5px;
+      }
+
+      p {
+        font-family: "AmericaRegular", sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: hsla(0, 0%, 100%, 0.84);
+        letter-spacing: -0.2px;
+        margin-block-start: 0px;
+        margin-block-end: 20px;
+      }
+    }
+  }
+
+  :hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: 100%;
+    width: 100%;
+    margin-right: 0px;
+  }
 `;
 
 export default function Projects() {
@@ -39,9 +103,72 @@ export default function Projects() {
         <h3>Showcase Projects</h3>
         <p>These are a few projects I've built and am especially proud of.</p>
       </ProjectsSection>
-      <ProjectReel>
-        <span>Reel goes here</span>
-      </ProjectReel>
+      <ProjectShowcase>
+        <Project
+          href="https://presubscribe.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <img src="https://presubscribe.me/meta.png" />
+          </div>
+          <div>
+            <h3>Presubscribe</h3>
+            <p>
+              Support your favorite creators, before they're independent.
+              Presubscribe to precommit to your Twitter graph.
+            </p>
+          </div>
+        </Project>
+        <Project
+          href="https://algosearch.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <img src="https://algosearch.io/favicons/feature.png" />
+          </div>
+          <div>
+            <h3>AlgoSearch</h3>
+            <p>
+              Open-source block explorer and analytics platform for the Algorand
+              network. One-click fork and deploy.
+            </p>
+          </div>
+        </Project>
+        <Project
+          href="https://weve.email"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <img src="/weve.jpeg" />
+          </div>
+          <div>
+            <h3>Weve</h3>
+            <p>
+              A weavemail client implementation&mdash;private, decentralized,
+              and open-source mail on the Arweave permaweb.
+            </p>
+          </div>
+        </Project>
+        <Project
+          href="https://apps.apple.com/us/app/memory-mood-tracker-diary/id1500958805"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <img src="/memory.jpeg" />
+          </div>
+          <div>
+            <h3>Memory</h3>
+            <p>
+              Enter, track, cherish. Look back at your best moments with Memory.
+              An ios-first mood tracker &amp; diary app.
+            </p>
+          </div>
+        </Project>
+      </ProjectShowcase>
     </ProjectLayout>
   );
 }

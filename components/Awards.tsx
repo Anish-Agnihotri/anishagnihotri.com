@@ -6,7 +6,7 @@ const AwardsSection = styled(Section)`
     color: ${(props) => props.theme.header.main};
     font-size: 30px;
     letter-spacing: -1.8px;
-    margin-block-start: 40px;
+    margin-block-start: 70px;
     margin-block-end: 20px;
     font-family: "Bluu", serif;
   }
