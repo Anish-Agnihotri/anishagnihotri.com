@@ -25,6 +25,5 @@ export default function Home() {
 
 // Comments
 // Compression
-// Meta
 // Analytics
 // Performance (SSR + styled-components)

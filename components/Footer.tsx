@@ -397,7 +397,7 @@ export default function Footer() {
         </div>
         <div>
           <p>
-            <img src="favicon/logo.svg" /> Developed by Anish Agnihotri &copy;
+            <img src="head/logo.svg" /> Developed by Anish Agnihotri &copy;
             2020.
           </p>
         </div>
