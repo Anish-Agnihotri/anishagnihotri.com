@@ -135,6 +135,20 @@ export default function Portfolio({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#f7faff" />
         <meta name="msapplication-config" content="/head/browserconfig.xml" />
         <meta name="theme-color" content="#f7faff" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-177315240-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-177315240-1');
+            `,
+          }}
+        ></script>
       </Head>
       <Component {...pageProps} />
       <GlobalStyle />
