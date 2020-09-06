@@ -110,7 +110,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/presubscribe.png" />
+            <img src="projects/presubscribe.png" alt="Presubscribe" />
           </div>
           <div>
             <h3>Presubscribe</h3>
@@ -126,7 +126,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/algosearch.png" />
+            <img src="projects/algosearch.png" alt="AlgoSearch" />
           </div>
           <div>
             <h3>AlgoSearch</h3>
@@ -142,7 +142,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/weve.jpeg" />
+            <img src="projects/weve.jpeg" alt="Weve" />
           </div>
           <div>
             <h3>Weve</h3>
@@ -158,7 +158,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/memory.png" />
+            <img src="projects/memory.png" alt="Memory" />
           </div>
           <div>
             <h3>Memory</h3>

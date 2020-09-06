@@ -65,7 +65,7 @@ const IntroSubs = styled.div`
     color: ${(props) => props.theme.header.decoration};
   }
 
-  h3 {
+  h2 {
     margin: 0px;
     font-size: 1.25rem;
     font-family: "Bluu", serif;
@@ -99,12 +99,12 @@ export default function Intro() {
       <IntroHeading>Serial hacker translating ideas to code</IntroHeading>
       <IntroSubs>
         <span>Current Position</span>
-        <h3>Research Intern, Polychain</h3>
+        <h2>Research Intern, Polychain</h2>
         <p>Technical research in blockchain, cryptoeconomics, and networks.</p>
       </IntroSubs>
       <IntroSubs>
         <span>With a passion for</span>
-        <h3>Blockchain &amp; Economics</h3>
+        <h2>Blockchain &amp; Economics</h2>
         <p>
           Exploring traditional markets, network effects, and financial
           modelling.

@@ -98,7 +98,7 @@ export default function Resume() {
     <ResumeSection>
       <ResumeContainer>
         <div ref={resumeTop}>
-          <img src="/resume/first.jpeg" />
+          <img src="/resume/first.jpeg" alt="Resume first third" />
         </div>
         <div
           style={{
@@ -106,7 +106,7 @@ export default function Resume() {
             visibility: resumeSecondDisplay ? "visible" : "hidden",
           }}
         >
-          <img src="/resume/second.jpeg" />
+          <img src="/resume/second.jpeg" alt="Resume second third" />
         </div>
         <div
           style={{
@@ -114,7 +114,7 @@ export default function Resume() {
             visibility: resumeThirdDisplay ? "visible" : "hidden",
           }}
         >
-          <img src="/resume/third.jpeg" />
+          <img src="/resume/third.jpeg" alt="Resume third third" />
         </div>
         <div>
           <h1>Download my resume?</h1>

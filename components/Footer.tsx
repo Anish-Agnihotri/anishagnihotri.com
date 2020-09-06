@@ -4,7 +4,7 @@ import { Section } from "components/Layout";
 const SubFooterSection = styled(Section)`
   background-color: ${(props) => props.theme.semidark};
 
-  h3 {
+  h2 {
     color: white;
     letter-spacing: -1.8px;
     font-family: "Bluu", serif;
@@ -40,7 +40,7 @@ const SubFooterSection = styled(Section)`
   }
 
   @media screen and (max-width: 540px) {
-    h3 {
+    h2 {
       font-size: 28px;
       letter-spacing: -0.8px;
       line-height: 36px;
@@ -72,7 +72,7 @@ const SubFooterLink = styled.a`
     margin-top: -1.5rem;
     padding: 29px;
 
-    h4 {
+    h3 {
       line-height: 1em;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -266,7 +266,7 @@ export default function Footer() {
   return (
     <>
       <SubFooterSection>
-        <h3>Interested in working together?</h3>
+        <h2>Interested in working together?</h2>
         <p>
           I'm always on the lookout for new opportunities. Especially ones with
           challenging work and tight deadlines.
@@ -279,11 +279,12 @@ export default function Footer() {
             href="https://github.com/Anish-Agnihotri"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <article>
-              <h4>Github</h4>
+              <h3>Github</h3>
               <p>code proficiency</p>
-              <img src="footer/github.svg" alt="Github Logo." />
+              <img src="footer/github.svg" alt="GitHub Logo." />
             </article>
             <div />
           </SubFooterLink>
@@ -291,9 +292,10 @@ export default function Footer() {
             href="https://dribbble.com/anishagnihotri"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Dribbble"
           >
             <article>
-              <h4>Dribbble</h4>
+              <h3>Dribbble</h3>
               <p>design insights</p>
               <img src="footer/dribbble.svg" alt="Dribbble Logo." />
             </article>
@@ -303,9 +305,10 @@ export default function Footer() {
             href="https://devpost.com/348712712"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Devpost"
           >
             <article>
-              <h4>Devpost</h4>
+              <h3>Devpost</h3>
               <p>shipping experience</p>
               <img src="footer/devpost.svg" alt="Devpost Logo." />
             </article>
@@ -315,9 +318,10 @@ export default function Footer() {
             href="https://gitcoin.co/anish-agnihotri"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Gitcoin"
           >
             <article>
-              <h4>Gitcoin</h4>
+              <h3>Gitcoin</h3>
               <p>open source work</p>
               <img src="footer/gitcoin.svg" alt="Gitcoin Logo." />
             </article>
@@ -330,8 +334,15 @@ export default function Footer() {
           <h3>About me</h3>
           <p>
             Full-stack developer in Toronto, currently working at{" "}
-            <a href="">Polychain</a>. Likes to spend his weekends hacking
-            together ideas, building great projects.
+            <a
+              href="https://polychain.capital"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Polychain
+            </a>
+            . Likes to spend his weekends hacking together ideas, building great
+            projects.
           </p>
         </div>
         <div>
@@ -397,8 +408,8 @@ export default function Footer() {
         </div>
         <div>
           <p>
-            <img src="head/logo.svg" /> Developed by Anish Agnihotri &copy;
-            2020.
+            <img src="head/logo.svg" alt="Anish Agnihotri logo" /> Developed by
+            Anish Agnihotri &copy; 2020.
           </p>
         </div>
       </FooterSection>
