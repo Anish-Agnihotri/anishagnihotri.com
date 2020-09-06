@@ -110,7 +110,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="https://presubscribe.me/meta.png" />
+            <img src="projects/presubscribe.png" />
           </div>
           <div>
             <h3>Presubscribe</h3>
@@ -126,7 +126,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="https://algosearch.io/favicons/feature.png" />
+            <img src="projects/algosearch.png" />
           </div>
           <div>
             <h3>AlgoSearch</h3>
@@ -142,7 +142,7 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="/weve.jpeg" />
+            <img src="projects/weve.jpeg" />
           </div>
           <div>
             <h3>Weve</h3>
@@ -158,13 +158,13 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="/memory.jpeg" />
+            <img src="projects/memory.png" />
           </div>
           <div>
             <h3>Memory</h3>
             <p>
               Enter, track, cherish. Look back at your best moments with Memory.
-              An ios-first mood tracker &amp; diary app.
+              An iOS-first mood tracker &amp; diary app.
             </p>
           </div>
         </Project>

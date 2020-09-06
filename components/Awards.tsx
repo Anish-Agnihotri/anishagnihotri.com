@@ -168,7 +168,7 @@ export default function Awards() {
           return (
             <>
               <Accolade
-                key={i}
+                key={i + twenty.length + 1}
                 href={accolade.url}
                 target="_blank"
                 rel="nooopener noreferrer"
@@ -185,7 +185,7 @@ export default function Awards() {
           return (
             <>
               <Accolade
-                key={i}
+                key={i + nineteen.length + twenty.length + 1}
                 href={accolade.url}
                 target="_blank"
                 rel="nooopener noreferrer"

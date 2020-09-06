@@ -106,8 +106,8 @@ export default function Intro() {
         <span>With a passion for</span>
         <h3>Blockchain &amp; Economics</h3>
         <p>
-          Exploring market structure, and network effects from on-chain
-          activity.
+          Exploring traditional markets, network effects, and financial
+          modelling.
         </p>
       </IntroSubs>
     </IntroSection>

@@ -345,7 +345,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   Code on GitHub
-                  <img src="/tab.svg" alt="Open in new tab" />
+                  <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>
               <li>
@@ -355,7 +355,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   Hacks on Devpost
-                  <img src="/tab.svg" alt="Open in new tab" />
+                  <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>
               <li>
@@ -365,7 +365,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   Journey on Twitter
-                  <img src="/tab.svg" alt="Open in new tab" />
+                  <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>
             </ul>
@@ -380,7 +380,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   DMs are open on Twitter
-                  <img src="/tab.svg" alt="Open in new tab" />
+                  <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>
               <li>
@@ -397,7 +397,8 @@ export default function Footer() {
         </div>
         <div>
           <p>
-            <img src="/logo.svg" /> Developed by Anish Agnihotri &copy; 2020.
+            <img src="favicon/logo.svg" /> Developed by Anish Agnihotri &copy;
+            2020.
           </p>
         </div>
       </FooterSection>

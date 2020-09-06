@@ -23,8 +23,6 @@ export default function Home() {
   );
 }
 
-// Projects
-
 // Comments
 // Compression
 // Meta

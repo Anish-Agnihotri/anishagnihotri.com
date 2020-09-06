@@ -148,10 +148,10 @@ export default function About() {
             style={{
               transform: `rotate(${0.3 * y + "deg"})`,
             }}
-            src="/me-rotation.png"
+            src="about/me-rotation.png"
             alt="Anish headshot border"
           />
-          <img src="/me.jpg" alt="Anish headshot" />
+          <img src="about/me.jpg" alt="Anish headshot" />
         </AboutImage>
       </div>
     </AboutSection>
