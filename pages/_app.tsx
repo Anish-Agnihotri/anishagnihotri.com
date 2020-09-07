@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { createGlobalStyle } from "styled-components";
-import "@brainhubeu/react-carousel/lib/style.css";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -70,16 +69,6 @@ export default function Portfolio({ Component, pageProps }) {
           as="font"
           crossOrigin=""
         />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
         <title>Anish Agnihotri</title>
         <meta name="title" content="Anish Agnihotri" />
         <meta
@@ -135,10 +124,6 @@ export default function Portfolio({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#f7faff" />
         <meta name="msapplication-config" content="/head/browserconfig.xml" />
         <meta name="theme-color" content="#f7faff" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-177315240-1"
-        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

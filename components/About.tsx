@@ -65,14 +65,17 @@ const AboutImage = styled.div`
 
   img:nth-of-type(1) {
     max-width: 350px;
+    will-change: transform, rotate;
   }
-  img:nth-of-type(2) {
-    max-width: 250px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 50px;
-    left: 50px;
+  picture {
+    img {
+      border-radius: 50%;
+      width: 250px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
   }
 
   @media screen and (max-width: 1024px) {
@@ -81,10 +84,12 @@ const AboutImage = styled.div`
     img:nth-of-type(1) {
       max-width: 200px;
     }
-    img:nth-of-type(2) {
-      max-width: 145px;
-      top: 27.5px;
-      left: 27.5px;
+    picture {
+      img {
+        width: 145px;
+        top: 27.5px;
+        left: 27.5px;
+      }
     }
   }
 `;
@@ -151,7 +156,11 @@ export default function About() {
             src="about/me-rotation.png"
             alt="Anish headshot border"
           />
-          <img src="about/me.jpg" alt="Anish headshot" />
+          <picture>
+            <source srcSet="about/me.webp" type="image/webp" />
+            <source srcSet="about/me.jpg" type="image/jpeg" />
+            <img src="about/me.jpg" alt="Anish headshot" />
+          </picture>
         </AboutImage>
       </div>
     </AboutSection>

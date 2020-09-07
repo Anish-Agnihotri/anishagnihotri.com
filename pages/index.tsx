@@ -25,4 +25,4 @@ export default function Home() {
 
 // Comments
 // Compression
-// Performance (SSR + styled-components)
+// Resume box fixes

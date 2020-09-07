@@ -12,9 +12,11 @@ const ResumeContainer = styled.div`
     height: auto;
     margin-top: -10px;
     transition: 0.1s;
+    will-change: transform;
 
     img {
-      max-width: 100%;
+      width: 100%;
+      height: 100%;
     }
 
     :nth-child(2),
@@ -98,7 +100,11 @@ export default function Resume() {
     <ResumeSection>
       <ResumeContainer>
         <div ref={resumeTop}>
-          <img src="/resume/first.jpeg" alt="Resume first third" />
+          <picture>
+            <source srcSet="/resume/first.webp" type="image/webp" />
+            <source srcSet="/resume/first.jpg" type="image/jpeg" />
+            <img src="/resume/first.jpg" alt="Resume first third" />
+          </picture>
         </div>
         <div
           style={{
@@ -106,7 +112,11 @@ export default function Resume() {
             visibility: resumeSecondDisplay ? "visible" : "hidden",
           }}
         >
-          <img src="/resume/second.jpeg" alt="Resume second third" />
+          <picture>
+            <source srcSet="/resume/second.webp" type="image/webp" />
+            <source srcSet="/resume/second.jpg" type="image/jpeg" />
+            <img src="/resume/second.jpg" alt="Resume second third" />
+          </picture>
         </div>
         <div
           style={{
@@ -114,7 +124,11 @@ export default function Resume() {
             visibility: resumeThirdDisplay ? "visible" : "hidden",
           }}
         >
-          <img src="/resume/third.jpeg" alt="Resume third third" />
+          <picture>
+            <source srcSet="/resume/third.webp" type="image/webp" />
+            <source srcSet="/resume/third.jpg" type="image/jpeg" />
+            <img src="/resume/third.jpg" alt="Resume third third" />
+          </picture>
         </div>
         <div>
           <h1>Download my resume?</h1>

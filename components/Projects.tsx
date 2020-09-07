@@ -52,7 +52,7 @@ const Project = styled.a`
       border-top-right-radius: 15px;
 
       img {
-        max-width: 100%;
+        width: 100%;
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
       }
@@ -110,7 +110,11 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/presubscribe.png" alt="Presubscribe" />
+            <picture>
+              <source srcSet="projects/presubscribe.webp" type="image/webp" />
+              <source srcSet="projects/presubscribe.jpg" type="image/jpeg" />
+              <img src="projects/presubscribe.jpg" alt="Presubscribe" />
+            </picture>
           </div>
           <div>
             <h3>Presubscribe</h3>
@@ -126,7 +130,11 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/algosearch.png" alt="AlgoSearch" />
+            <picture>
+              <source srcSet="projects/algosearch.webp" type="image/webp" />
+              <source srcSet="projects/algosearch.jpg" type="image/jpeg" />
+              <img src="projects/algosearch.jpg" alt="AlgoSearch" />
+            </picture>
           </div>
           <div>
             <h3>AlgoSearch</h3>
@@ -142,7 +150,11 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/weve.jpeg" alt="Weve" />
+            <picture>
+              <source srcSet="projects/weve.webp" type="image/webp" />
+              <source srcSet="projects/weve.jpg" type="image/jpeg" />
+              <img src="projects/weve.jpg" alt="Weve" />
+            </picture>
           </div>
           <div>
             <h3>Weve</h3>
@@ -158,7 +170,11 @@ export default function Projects() {
           rel="noopener noreferrer"
         >
           <div>
-            <img src="projects/memory.png" alt="Memory" />
+            <picture>
+              <source srcSet="projects/memory.webp" type="image/webp" />
+              <source srcSet="projects/memory.jpg" type="image/jpeg" />
+              <img src="projects/memory.jpg" alt="Memory" />
+            </picture>
           </div>
           <div>
             <h3>Memory</h3>
