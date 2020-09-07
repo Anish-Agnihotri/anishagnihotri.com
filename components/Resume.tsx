@@ -69,13 +69,13 @@ export default function Resume() {
     setResumeSecondDisplay(false);
     setResumeThirdDisplay(false);
 
-    if (top < 235) {
+    if (top < 148) {
       setResumeSecondDisplay(true);
     }
     // When Top < 250, begin to animate resume 2/3rd
-    if (top < 250) {
+    if (top < 150) {
       // Animate from 110deg to 0deg
-      let perspective = (top / 2.27) * -1;
+      let perspective = (top / 1.4) * -1;
       setResumeSecond(perspective < 0 ? perspective : 0);
     }
 
@@ -100,11 +100,7 @@ export default function Resume() {
     <ResumeSection>
       <ResumeContainer>
         <div ref={resumeTop}>
-          <picture>
-            <source srcSet="/resume/first.webp" type="image/webp" />
-            <source srcSet="/resume/first.jpg" type="image/jpeg" />
-            <img src="/resume/first.jpg" alt="Resume first third" />
-          </picture>
+          <img src="/resume/first.png" alt="Resume first third" />
         </div>
         <div
           style={{
@@ -112,11 +108,7 @@ export default function Resume() {
             visibility: resumeSecondDisplay ? "visible" : "hidden",
           }}
         >
-          <picture>
-            <source srcSet="/resume/second.webp" type="image/webp" />
-            <source srcSet="/resume/second.jpg" type="image/jpeg" />
-            <img src="/resume/second.jpg" alt="Resume second third" />
-          </picture>
+          <img src="/resume/second.png" alt="Resume second third" />
         </div>
         <div
           style={{
@@ -124,11 +116,7 @@ export default function Resume() {
             visibility: resumeThirdDisplay ? "visible" : "hidden",
           }}
         >
-          <picture>
-            <source srcSet="/resume/third.webp" type="image/webp" />
-            <source srcSet="/resume/third.jpg" type="image/jpeg" />
-            <img src="/resume/third.jpg" alt="Resume third third" />
-          </picture>
+          <img src="/resume/third.png" alt="Resume third third" />
         </div>
         <div>
           <h1>Download my resume?</h1>
