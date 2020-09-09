@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { Section } from "components/Layout";
 
+// Projects layout section
 const ProjectLayout = styled.div`
   margin-top: 50px;
   text-align: left;
   display: block;
 `;
 
+// Projects interior section
 const ProjectsSection = styled(Section)`
   h3 {
     font-size: 30px;
@@ -26,10 +28,12 @@ const ProjectsSection = styled(Section)`
   }
 `;
 
+// Project showcase section
 const ProjectShowcase = styled(Section)`
   margin-top: 20px;
 `;
 
+// Project item
 const Project = styled.a`
   display: inline-block;
   width: calc(50% - 30px);

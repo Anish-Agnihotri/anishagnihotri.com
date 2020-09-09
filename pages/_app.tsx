@@ -1,8 +1,14 @@
+// Initial setup
 import React from "react";
 import Head from "next/head";
+import type { AppProps } from "next/app";
+
+// Styled components
 import { createGlobalStyle } from "styled-components";
 
+// Global styling
 const GlobalStyle = createGlobalStyle`
+  /* Custom fonts */
   @font-face {
     font-family: 'Bluu';
     src: url('/fonts/Bluu-Suuperstar-Bold.woff2');
@@ -35,39 +41,40 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
   }
 
+  /* Global body styling */
   body {
     background-color: #f7faff;
     margin: 0px;
   }
 `;
 
-export default function Portfolio({ Component, pageProps }) {
+export default function Portfolio({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
         <link
+          rel="preload"
           href="/fonts/GT-America-Regular.woff2"
-          rel="preload"
           as="font"
-          crossOrigin=""
+          type="font/woff2"
         />
         <link
+          rel="preload"
           href="/fonts/GT-America-Bold.woff2"
-          rel="preload"
           as="font"
-          crossOrigin=""
+          type="font/woff2"
         />
         <link
+          rel="preload"
           href="/fonts/GT-America-Mono-Medium.woff2"
-          rel="preload"
           as="font"
-          crossOrigin=""
+          type="font/woff2"
         />
         <link
-          href="/fonts/Bluu-Suuperstar-Bold.woff2"
           rel="preload"
+          href="/fonts/Bluu-Suuperstar-Bold.woff2"
           as="font"
-          crossOrigin=""
+          type="font/woff2"
         />
         <title>Anish Agnihotri</title>
         <meta name="title" content="Anish Agnihotri" />

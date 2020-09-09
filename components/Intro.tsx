@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Section } from "components/Layout";
 
+// Intro section
 const IntroSection = styled(Section)`
   margin-top: 120px;
 
@@ -9,6 +10,7 @@ const IntroSection = styled(Section)`
   }
 `;
 
+// Highlight name section
 const IntroName = styled.h3`
   text-transform: uppercase;
   font-family: "AmericaMono", sans-serif;
@@ -25,6 +27,7 @@ const IntroName = styled.h3`
   }
 `;
 
+// Large header section
 const IntroHeading = styled.h1`
   color: ${(props) => props.theme.header.main};
   font-size: 61px;
@@ -51,6 +54,7 @@ const IntroHeading = styled.h1`
   }
 `;
 
+// Intro subsections with details
 const IntroSubs = styled.div`
   max-width: 300px;
   display: inline-block;

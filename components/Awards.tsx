@@ -1,6 +1,7 @@
-import styled from "styled-components";
 import { Section } from "components/Layout";
+import styled from "styled-components";
 
+// Awards section
 const AwardsSection = styled(Section)`
   h1 {
     color: ${(props) => props.theme.header.main};
@@ -19,10 +20,12 @@ const AwardsSection = styled(Section)`
   }
 `;
 
+// Awards highlight year
 const Year = styled.span`
   color: ${(props) => props.theme.accent};
 `;
 
+// Awards accolade link
 const Accolade = styled.a`
   color: ${(props) => props.theme.text.light};
   text-decoration: none;
@@ -33,11 +36,20 @@ const Accolade = styled.a`
   }
 `;
 
+// Awards slash divider
 const Divider = styled.span`
   color: ${(props) => props.theme.text.light};
   padding: 0px 10px;
 `;
 
+// Award type
+type award = {
+  url: string;
+  name: string;
+  highlight?: string;
+};
+
+// 2020 accomplishments
 const twenty = [
   {
     url:
@@ -62,6 +74,7 @@ const twenty = [
   },
 ];
 
+// 2019 accomplishments
 const nineteen = [
   {
     url: "https://devpost.com/software/algofund",
@@ -89,6 +102,7 @@ const nineteen = [
   },
 ];
 
+// 2018 accomplishments
 const eighteen = [
   {
     url: "https://developer.apple.com/wwdc20/scholarships/",
@@ -144,7 +158,8 @@ export default function Awards() {
       <p>
         <Year>2020</Year>
         <Divider>/</Divider>
-        {twenty.map((accolade, i) => {
+        {twenty.map((accolade: award, i: number) => {
+          // For each accomplishment, display accolade and divider
           return (
             <>
               <Accolade
@@ -164,7 +179,8 @@ export default function Awards() {
         })}
         <Year>2019</Year>
         <Divider>/</Divider>
-        {nineteen.map((accolade, i) => {
+        {nineteen.map((accolade: award, i: number) => {
+          // For each accomplishment, display accolade and divider
           return (
             <>
               <Accolade
@@ -181,7 +197,8 @@ export default function Awards() {
         })}
         <Year>2018</Year>
         <Divider>/</Divider>
-        {eighteen.map((accolade, i) => {
+        {eighteen.map((accolade: award, i: number) => {
+          // For each accomplishment, display accolade and divider
           return (
             <>
               <Accolade

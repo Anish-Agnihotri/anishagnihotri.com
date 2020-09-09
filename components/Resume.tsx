@@ -2,8 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { Section } from "components/Layout";
 
-const ResumeSection = styled(Section)``;
-
+// Resume container
 const ResumeContainer = styled.div`
   perspective: 1000;
 
@@ -57,21 +56,27 @@ const ResumeContainer = styled.div`
 `;
 
 export default function Resume() {
+  // Collect resume 1/3rd item to assess relative scroll position
   const resumeTop = useRef(null);
-  const [resumeSecond, setResumeSecond] = useState(-110);
-  const [resumeSecondDisplay, setResumeSecondDisplay] = useState(false);
-  const [resumeThird, setResumeThird] = useState(-110);
-  const [resumeThirdDisplay, setResumeThirdDisplay] = useState(false);
+  const [resumeSecond, setResumeSecond] = useState<number>(-110);
+  const [resumeSecondDisplay, setResumeSecondDisplay] = useState<boolean>(
+    false
+  );
+  const [resumeThird, setResumeThird] = useState<number>(-110);
+  const [resumeThirdDisplay, setResumeThirdDisplay] = useState<boolean>(false);
 
-  const animateScroll = () => {
+  function animateScroll(): void {
     const { height, top } = resumeTop.current.getBoundingClientRect();
 
     setResumeSecondDisplay(false);
     setResumeThirdDisplay(false);
 
+    // If position from top < 148
     if (top < 148) {
+      // Toggle 2/3rd item visibility
       setResumeSecondDisplay(true);
     }
+
     // When Top < 250, begin to animate resume 2/3rd
     if (top < 150) {
       // Animate from 110deg to 0deg
@@ -81,23 +86,29 @@ export default function Resume() {
 
     // When Top < -50, begin to animate resume 3/3rd
     if (top < -25 + (height / 2) * -1) {
+      // Toggle 3/3rd item visibility
       setResumeThirdDisplay(true);
 
+      // Animate perspective degree shift
       let perspective = (95 - ((top + height / 2) / 2.27) * -1) * -1;
       setResumeThird(perspective < 0 ? perspective : 0);
     }
-  };
+  }
 
+  // On load:
   useEffect(() => {
+    // Attach scroll event listener
     window.addEventListener("scroll", animateScroll);
 
+    // On page exit
     return () => {
+      // Remove scroll event listener
       window.removeEventListener("scroll", animateScroll);
     };
   }, []);
 
   return (
-    <ResumeSection>
+    <Section>
       <ResumeContainer>
         <div ref={resumeTop}>
           <img src="/resume/first.png" alt="Resume first third" />
@@ -129,6 +140,6 @@ export default function Resume() {
           </a>
         </div>
       </ResumeContainer>
-    </ResumeSection>
+    </Section>
   );
 }

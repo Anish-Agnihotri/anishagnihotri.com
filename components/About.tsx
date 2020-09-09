@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import { Section } from "components/Layout";
+import styled from "styled-components";
 
+// About section
 const AboutSection = styled(Section)`
   display: flex;
   flex-direction: row;
@@ -59,6 +60,7 @@ const AboutSection = styled(Section)`
   }
 `;
 
+// About section rotating image
 const AboutImage = styled.div`
   position: relative;
   transform: translateY(-25px);
@@ -95,16 +97,23 @@ const AboutImage = styled.div`
 `;
 
 export default function About() {
-  const [y, setY] = useState(0);
+  // Set initial pageY position to 0
+  const [y, setY] = useState<number>(0);
 
-  const animateScroll = () => {
+  // Check for pageY position
+  function animateScroll(): void {
+    // Set Y == pageY position
     setY(window.scrollY);
-  };
+  }
 
+  // On page load and until exit
   useEffect(() => {
+    // Add event listener to scroll to check for pageY position
     window.addEventListener("scroll", animateScroll);
 
+    // On page exit:
     return () => {
+      // Remove event listener
       window.removeEventListener("scroll", animateScroll);
     };
   }, []);
@@ -144,7 +153,7 @@ export default function About() {
           >
             internal tools
           </a>
-          . I'm also an incoming Freshman at the University of Waterloo.
+          . I'm also a freshman at the University of Waterloo.
         </p>
       </div>
       <div>

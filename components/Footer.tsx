@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Section } from "components/Layout";
 
+// Subfooter section
 const SubFooterSection = styled(Section)`
   background-color: ${(props) => props.theme.semidark};
 
@@ -56,6 +57,7 @@ const SubFooterSection = styled(Section)`
   }
 `;
 
+// Subfooter link boxes
 const SubFooterLink = styled.a`
   width: 200px;
   height: 200px;
@@ -146,6 +148,7 @@ const SubFooterLink = styled.a`
   }
 `;
 
+// Footer section
 const FooterSection = styled(Section)`
   background-color: ${(props) => props.theme.dark};
 
