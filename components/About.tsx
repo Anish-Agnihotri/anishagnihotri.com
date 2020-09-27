@@ -121,7 +121,7 @@ export default function About() {
   return (
     <AboutSection>
       <div>
-        <p>My name is Anish, I'm 17 years old, and I like to build software.</p>
+        <p>My name is Anish, I'm 18 years old, and I like to build software.</p>
         <p>
           I started programming in the fifth grade and have been typing away at
           a keyboard ever since. In high school, I grew passionate about
