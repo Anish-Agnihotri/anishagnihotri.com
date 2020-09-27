@@ -129,7 +129,7 @@ export default function Projects() {
           </div>
         </Project>
         <Project
-          href="https://algosearch.io"
+          href="https://github.com/anish-agnihotri/algosearch"
           target="_blank"
           rel="noopener noreferrer"
         >
