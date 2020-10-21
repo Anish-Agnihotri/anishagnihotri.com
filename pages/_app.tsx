@@ -52,30 +52,6 @@ export default function Portfolio({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <link
-          rel="preload"
-          href="/fonts/GT-America-Regular.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="/fonts/GT-America-Bold.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="/fonts/GT-America-Mono-Medium.woff2"
-          as="font"
-          type="font/woff2"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Bluu-Suuperstar-Bold.woff2"
-          as="font"
-          type="font/woff2"
-        />
         <title>Anish Agnihotri</title>
         <meta name="title" content="Anish Agnihotri" />
         <meta

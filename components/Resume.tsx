@@ -9,7 +9,7 @@ const ResumeContainer = styled.div`
   div {
     width: 100%;
     height: auto;
-    margin-top: -10px;
+    margin-top: -5px;
     transition: 0.1s;
     will-change: transform;
 
