@@ -56,14 +56,14 @@ export default function Portfolio({ Component, pageProps }: AppProps) {
         <meta name="title" content="Anish Agnihotri" />
         <meta
           name="description"
-          content="Anish Agnihotri is a 17 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
+          content="Anish Agnihotri is an 18 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://anishagnihotri.com" />
         <meta property="og:title" content="Anish Agnihotri" />
         <meta
           property="og:description"
-          content="Anish Agnihotri is a 17 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
+          content="Anish Agnihotri is an 18 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
         />
         <meta
           property="og:image"
@@ -74,7 +74,7 @@ export default function Portfolio({ Component, pageProps }: AppProps) {
         <meta property="twitter:title" content="Anish Agnihotri" />
         <meta
           property="twitter:description"
-          content="Anish Agnihotri is a 17 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
+          content="Anish Agnihotri is an 18 y/o developer from Toronto, Canada who likes to build software. He's most passionate about Blockchain & Economics."
         />
         <meta
           property="twitter:image"
