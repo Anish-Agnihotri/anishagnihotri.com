@@ -36,14 +36,15 @@ const ProjectShowcase = styled(Section)`
 // Project item
 const Project = styled.a`
   display: inline-block;
-  width: calc(50% - 30px);
+  width: calc(50% - 40px);
+  border: 5px solid transparent;
   min-width: 400px;
   border-radius: 13px;
   margin: 15px 30px 15px 0px;
   transition: 100ms ease-in-out;
-  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
 
   div {
     width: 100%;
@@ -52,13 +53,13 @@ const Project = styled.a`
     color: #fff;
 
     :nth-child(1) {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
 
       img {
         width: 100%;
-        border-top-left-radius: 9px;
-        border-top-right-radius: 9px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
       }
     }
 
@@ -91,6 +92,7 @@ const Project = styled.a`
 
   :hover {
     transform: scale(1.05);
+    border-color: ${(props) => props.theme.accent};
   }
 
   @media screen and (max-width: 500px) {
@@ -105,7 +107,9 @@ export default function Projects() {
     <ProjectLayout>
       <ProjectsSection>
         <h3>Showcase Projects</h3>
-        <p>These are a few projects I've built and am especially proud of.</p>
+        <p>
+          These are a few projects I've built myself and am especially proud of.
+        </p>
       </ProjectsSection>
       <ProjectShowcase>
         <Project
@@ -129,22 +133,22 @@ export default function Projects() {
           </div>
         </Project>
         <Project
-          href="https://github.com/anish-agnihotri/algosearch"
+          href="https://onlytweets.co/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <div>
             <picture>
-              <source srcSet="projects/algosearch.webp" type="image/webp" />
-              <source srcSet="projects/algosearch.jpg" type="image/jpeg" />
-              <img src="projects/algosearch.jpg" alt="AlgoSearch" />
+              <source srcSet="projects/onlytweets.webp" type="image/webp" />
+              <source srcSet="projects/onlytweets.jpg" type="image/jpeg" />
+              <img src="projects/onlytweets.jpg" alt="OnlyTweets" />
             </picture>
           </div>
           <div>
-            <h3>AlgoSearch</h3>
+            <h3>OnlyTweets</h3>
             <p>
-              Open-source block explorer and analytics platform for the Algorand
-              network. One-click fork and deploy.
+              Native monetization through Twitter. Create and subscribe to
+              paywalled Twitter accounts and build effective communities.
             </p>
           </div>
         </Project>
@@ -164,7 +168,7 @@ export default function Projects() {
             <h3>Weve</h3>
             <p>
               A weavemail client implementation&mdash;private, decentralized,
-              and open-source mail on the Arweave permaweb.
+              and open-source mail&mdash;on the Arweave permaweb.
             </p>
           </div>
         </Project>

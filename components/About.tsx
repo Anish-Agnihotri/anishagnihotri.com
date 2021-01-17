@@ -151,9 +151,9 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            internal tools
+            internal tooling
           </a>
-          . I'm also a freshman at the University of Waterloo.
+          . By night, I'm also a freshman at the University of Waterloo.
         </p>
       </div>
       <div>

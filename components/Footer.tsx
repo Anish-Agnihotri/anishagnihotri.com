@@ -336,7 +336,7 @@ export default function Footer() {
         <div>
           <h3>About me</h3>
           <p>
-            Full-stack developer in Toronto, currently working at{" "}
+            Software developer in Toronto, currently working at{" "}
             <a
               href="https://polychain.capital"
               target="_blank"
