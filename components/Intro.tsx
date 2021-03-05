@@ -104,7 +104,7 @@ export default function Intro() {
       <IntroSubs>
         <span>Current Position</span>
         <h2>Research Intern, Polychain</h2>
-        <p>Technical research in blockchain, cryptoeconomics, and networks.</p>
+        <p>Technical research in blockchain, cryptoeconomics, and scaling.</p>
       </IntroSubs>
       <IntroSubs>
         <span>With a passion for</span>

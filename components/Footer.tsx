@@ -125,15 +125,15 @@ const SubFooterLink = styled.a`
   }
 
   :nth-of-type(2) div {
-    background-image: url("/footer/dribbble-dark.svg");
-  }
-
-  :nth-of-type(3) div {
     background-image: url("/footer/devpost-dark.svg");
   }
 
-  :nth-of-type(4) div {
+  :nth-of-type(3) div {
     background-image: url("/footer/gitcoin-dark.svg");
+  }
+
+  :nth-of-type(4) div {
+    background-image: url("/footer/dribbble-dark.svg");
   }
 
   @media screen and (max-width: 580px) {
@@ -292,19 +292,6 @@ export default function Footer() {
             <div />
           </SubFooterLink>
           <SubFooterLink
-            href="https://dribbble.com/anishagnihotri"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Dribbble"
-          >
-            <article>
-              <h3>Dribbble</h3>
-              <p>design insights</p>
-              <img src="footer/dribbble.svg" alt="Dribbble Logo." />
-            </article>
-            <div />
-          </SubFooterLink>
-          <SubFooterLink
             href="https://devpost.com/348712712"
             target="_blank"
             rel="noopener noreferrer"
@@ -312,7 +299,7 @@ export default function Footer() {
           >
             <article>
               <h3>Devpost</h3>
-              <p>shipping experience</p>
+              <p>shipping speed</p>
               <img src="footer/devpost.svg" alt="Devpost Logo." />
             </article>
             <div />
@@ -330,21 +317,34 @@ export default function Footer() {
             </article>
             <div />
           </SubFooterLink>
+          <SubFooterLink
+            href="https://dribbble.com/anishagnihotri"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Dribbble"
+          >
+            <article>
+              <h3>Dribbble</h3>
+              <p>design exploration</p>
+              <img src="footer/dribbble.svg" alt="Dribbble Logo." />
+            </article>
+            <div />
+          </SubFooterLink>
         </div>
       </SubFooterSection>
       <FooterSection>
         <div>
           <h3>About me</h3>
           <p>
-            Software developer in Toronto, currently working at{" "}
+            Software engineer in Toronto, currently working at{" "}
             <a
               href="https://polychain.capital"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Polychain
+              Polychain Capital
             </a>
-            . Likes to spend his weekends hacking together ideas, building great
+            . Likes to spend his weekends hacking together ideas, building fun
             projects.
           </p>
         </div>
@@ -364,21 +364,21 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://devpost.com/348712712"
+                  href="https://twitter.com/_anishagnihotri"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Hacks on Devpost
+                  Updates on Twitter
                   <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://twitter.com/_anishagnihotri"
+                  href="https://devpost.com/348712712"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Journey on Twitter
+                  Hacks on Devpost
                   <img src="footer/tab.svg" alt="Open in new tab" />
                 </a>
               </li>

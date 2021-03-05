@@ -1,9 +1,5 @@
 // Initial setup
-import Document, {
-  Head,
-  Main,
-  NextScript,
-} from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 // Styled components SSR
 import { ServerStyleSheet } from "styled-components";
@@ -32,7 +28,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <link
             rel="preload"
@@ -68,7 +64,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

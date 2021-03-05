@@ -136,7 +136,7 @@ export default function About() {
           .
         </p>
         <p>
-          Right now, I'm a Research Intern at{" "}
+          I work at{" "}
           <a
             href="https://polychain.capital/"
             target="_blank"
@@ -144,16 +144,16 @@ export default function About() {
           >
             Polychain Capital
           </a>
-          , evaluating blockchain projects, identifying network trends, and
-          building{" "}
+          , evaluating blockchain projects, conducting technical research, and
+          building internal tooling. On the side, I help friends at{" "}
           <a
-            href="https://stats.polychainlabs.com"
+            href="https://www.usestir.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            internal tooling
-          </a>
-          . By night, I'm also a freshman at the University of Waterloo.
+            Stir
+          </a>{" "}
+          ship one-off drops for creators.
         </p>
       </div>
       <div>

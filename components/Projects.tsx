@@ -107,9 +107,7 @@ export default function Projects() {
     <ProjectLayout>
       <ProjectsSection>
         <h3>Showcase Projects</h3>
-        <p>
-          These are a few projects I've built myself and am especially proud of.
-        </p>
+        <p>Selected hacks that are my favorite:</p>
       </ProjectsSection>
       <ProjectShowcase>
         <Project
