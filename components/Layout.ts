@@ -16,8 +16,8 @@ export const Section = styled.div`
   /* Responsiveness */
   @media screen and (max-width: 1100px) {
     /* 50px left-right padding on display <1100px width */
-    width: calc(100% - 100px);
-    padding: 0px 50px;
+    width: calc(100% - 60px);
+    padding: 0px 30px;
   }
 `;
 
