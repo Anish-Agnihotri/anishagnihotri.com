@@ -412,7 +412,7 @@ export default function Footer() {
         <div>
           <p>
             <img src="head/logo.svg" alt="Anish Agnihotri logo" /> Developed by
-            Anish Agnihotri &copy; 2020.
+            Anish Agnihotri &copy; 2021.
           </p>
         </div>
       </FooterSection>
